@@ -1,0 +1,19 @@
+<%- include ('partials/header') %>
+<div class="main" id="main">
+  <div class="genDiv">
+    <h4 style="margin-left: 0;"> <i>Edit <%=foundBlog.title%> </i></h4>
+    <form action="/blog/<%=foundBlog._id%>/?_method=PUT" method="POST">
+      <b><label class="ps" for="title"> Title</label></b>
+      <input class="form-control" type="text" name="blog[title]" value="<%=foundBlog.title%>">
+      <b><label class="ps" for="image">Image</label></b>
+      <input class="form-control" type="text" name="blog[image]" value="<%=foundBlog.image%>">
+      <b><label class="ps" for="body">Post Content</label></b>
+      <textarea class="ps" type="text" name="blog[body]" id="" cols="30" rows="10"
+        placeholder="Body"><%=foundBlog.body%>"</textarea>
+      <b><label class="ps" for="author">Author</label></b>
+      <input class="form-control" id="author" type="text" name="blog[author]" value="<%=foundBlog.author%>">
+      <input style="text-align: right;" class="btnn" type="submit" value="Update">
+    </form>
+  </div>
+</div>
+<%- include ('partials/footer') %>

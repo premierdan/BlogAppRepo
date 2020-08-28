@@ -1,0 +1,85 @@
+<%- include ('partials/header') %>
+<div class="main" id="main">
+  <h3><%=foundBlog.title%></h3>
+  <div class="genDiv">
+    <div class="imgContainer">
+      <img class="contain" src="<%=foundBlog.image%>" alt="" height="" width="100%">
+    </div>
+    <!-- <img class="contain" src="<%=foundBlog.image%>" alt="" height="" width="100%"> -->
+    <p class="ps">Posted: <%=foundBlog.created.toDateString()%></p>
+    <p class="ps"><%=foundBlog.title%>... By <b><%=foundBlog.author%></b></p>
+    <p class="ps"><%=foundBlog.body%></p>
+    <p class="ps"><%=foundBlog.remark%></p>
+
+    <div class="comment">
+      <form action="" method="">
+        <b class="ps"> <label for="comment">COMMENT</label></b>
+        <textarea name="comment" id="" cols="60" rows="2"><%=foundBlog.remark%></textarea>
+        <button class="ps" style="border-radius: 10px; float: right;">Comment</button>
+      </form>
+    </div>
+    <a class="btnn" href="/blog/<%=foundBlog._id%>/edit">Edit Post</a>
+
+    <!-- Without Delete Dialog box -->
+    <!-- <form id="secForm" style="display: inline-block;" action="/blog/<%=foundBlog._id%>?_method=Delete" method="POST">
+      <button class="btnn" style="border-radius: 10px;">Delete Post</button>
+    </form> -->
+
+    <!--Delete button with Dialog box -->
+    <button class="btnn" onclick="document.getElementById('id01').style.display='block'">Delete Post</button>
+
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+      <form class="modal-content2" id="secForm" action="/blog/<%=foundBlog._id%>?_method=Delete" method="POST">
+        <div class="container">
+          <h4>Delete <%=foundBlog.title%>? </h4>
+          <p class="" style="font-size: 20px;">Are you sure you parmanently want to delete this post?</p>
+          <div class="clearfix">
+            <button class="btnn" type="button" onclick="document.getElementById('id01').style.display='none'"
+              class="cancelbtn">Cancel</button>
+            <button type="submit" style="border-radius: 10px;"
+              onclick="document.getElementById('id01').style.display='none'" class="deletebtn btnn">Delete</button>
+            <!-- <input type="submit" value="Delete"> Alrenatively -->
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+    <!-- ===== -->
+    <!-- Delete Dialog box using Bootsrap 4 -->
+    <!-- Button trigger modal -->
+    <form style="display: inline-block;" action="/blog/<%=foundBlog._id%>?_method=Delete" method="POST">
+      <button style="border-radius: 10px;" type="button" class="btnn" data-toggle="modal" data-target="#exampleModal">
+        Delete Post
+      </button>
+    </form>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Delete <%=foundBlog.title%> ?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body ps">
+            Are you sure you parmanently want to delete this post?
+          </div>
+          <form class="modal-footer" id="secForm" style="display: inline-block;"
+            action="/blog/<%=foundBlog._id%>?_method=Delete" method="POST">
+            <!-- <div class="modal-footer"> -->
+            <button type="button" class="btnn2" data-dismiss="modal">Cancel</button>
+            <button type="submit" class="btnn">Delete</button>
+            <!-- </div> -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<%- include ('partials/footer') %>

@@ -1,0 +1,29 @@
+
+<%- include ('partials/header') %>
+<div class="main" id="main">
+  <h3><%=foundBlog.title%></h3>
+  <div class="genDiv">
+    <div class="imgContainer">
+      <img class="contain" src="<%=foundBlog.image%>" alt="" height="" width="100%">
+    </div>
+    <!-- <img class="contain" src="<%=foundBlog.image%>" alt="" height="" width="100%"> -->
+    <p class="ps"><%=foundBlog.created.toDateString()%></p>
+    <p class="ps"><%=foundBlog.title%>... By <b><%=foundBlog.author%></b></p>
+    <p class="ps"><%=foundBlog.body%></p>
+    <p class="ps"><%=foundBlog.remark%></p>
+
+    <div class="comment">
+      <form action="" method="">
+        <b class="ps"> <label for="comment">COMMENT</label></b>
+        <textarea name="comment" id="" cols="60" rows="2"><%=foundBlog.remark%></textarea>
+        <button class="ps" style="border-radius: 10px; float: right;">Comment</button>
+      </form>
+    </div>
+    <a class="btnn" href="/user/<%=foundBlog._id%>/edit">Edit Post</a>
+
+    <form id="secForm" style="display: inline-block;" action="/user/<%=foundBlog._id%>?_method=Delete" method="POST">
+      <button class="btnn" style="border-radius: 10px;">Delete Post</button>
+    </form>
+  </div>
+</div>
+<%- include ('partials/footer') %>

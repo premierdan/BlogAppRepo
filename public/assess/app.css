@@ -1,0 +1,412 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.genDiv{
+  width: 65%;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 2px solid rgba(238, 228, 228, 0.788) ;
+  padding: 15px;
+}
+
+.genDiv .comment{
+  border-radius: 10px;
+}
+
+.comment textarea, textarea{
+border: 2px solid rgba(238, 228, 228, 0.788);
+text-align: left;
+border-radius: 10px;
+width:100%;
+}
+
+textarea{
+  border: 2px solid rgba(238, 228, 228, 0.788);
+  text-align: left;
+  border-radius: 10px;
+}
+
+#password{
+display:none;
+}
+
+h1 a, a, button{
+  text-transform: none;
+  text-decoration: none;
+  color: black!important;
+}
+
+/* a:hover, h1 a:hover, button:hover{
+  text-decoration: line-through;
+} */
+
+div .btnn{
+  background-color: white;
+  border-radius: 7px;
+  border: 2px solid rgb(136, 41, 41);
+  text-transform: none;
+  text-decoration: none;
+  color:rgb(136, 41, 41)!important;
+  font-size: large;
+  padding: 5px;
+}
+
+
+.btnn2{
+  border-radius: 7px;
+  border: 2px solid rgb(136, 41, 41);
+  background-color:rgb(241, 198, 181);
+  text-transform: none;
+  text-decoration: none;
+  color:rgb(136, 41, 41)!important;
+  font-size: large;
+  padding: 5px;
+}
+
+h3{
+  margin-left: 17%;
+}
+
+.mydate{
+  color: rgba(0, 0, 0, 0.336);
+}
+
+/* div p a{
+  color: white!important;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px brown;
+  margin: 5px;
+  font-size: small;
+} */
+
+div p .route{
+  color: white!important;
+  text-decoration: none;
+  /* margin-left: 5px; */
+  text-shadow: 2px 2px 2px brown;
+  font-size: small;
+}
+
+.ps{
+font-size: small; 
+text-align: justify;
+}
+
+li img{
+  margin-left: 20px;
+}
+
+ul .textLogo{
+  color: white;
+  font-weight: 600;
+  font-family: cursive;
+  background-color: rgb(36, 4, 4);
+  border-radius: 10px;
+  font-size: small;
+  list-style: none;
+  box-shadow: 3px 3px 15px rgb(241, 198, 181);
+  border: solid rgb(241, 198, 181) 2px;
+}
+
+li .logo{
+  border-radius: 5px;
+  box-shadow: 3px 3px 15px rgb(241, 198, 181);
+}
+
+/* for self style navbar that works */
+/* .left li, .right li{
+  display: inline-block;
+  padding: 4px;
+} */
+
+/* .left{
+  float: left;
+  list-style: none;
+} */
+
+/* .right{
+  float: right;
+  list-style: none;
+} */
+
+.active{
+  list-style: none;
+  margin: 3px;
+  padding: 0%;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light {
+  background-color: black;
+  padding: 0%;
+  margin-bottom: 5px;
+  width: 100%;
+} 
+
+a.nav-link {
+  /* margin-left: 35px; */
+  color: white!important;
+  line-height: 0px;
+  margin-top: 30px;
+  text-shadow: 2px 2px 2px brown;
+}
+
+li button {
+padding: 0%;
+}
+
+li .signup{
+  border-left: 2px solid white;
+}
+
+span.navbar-toggler-icon{
+  background-color: white;
+}
+
+div .sidenav {
+  height: 100%;
+  width:0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(19, 14, 14);
+  overflow-x: hidden;
+  padding-top: 20px;
+  /* margin-top: 85px; */
+  padding: 5px;
+  color: white;
+  text-align: justify;
+  transition: 0.5s;
+}
+
+/* div#mySidenav */
+
+.main {
+  font-size: 28px;
+  /* padding: 0px 10px; */
+  margin-top: 120px;
+  margin-bottom: 10%;
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+
+/* .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+} */
+
+.sidenav a {
+  /* padding: 8px 8px 8px 32px; */
+  text-decoration: none;
+  font-size: 25px;
+  color: brown;
+  display: block;
+  transition: 0.3s;
+}
+
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color:brown ;
+}
+
+a.closebtn{
+  color: white!important;
+  text-decoration: none!important;
+}
+
+/* .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color:brown ;
+} */
+
+/* #main {
+  transition: margin-left .5s;
+  padding: 16px;
+} */
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+
+
+
+
+span.navbar-toggler-icon {
+  /* color: white!important; */
+  background-color: white;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+.main {
+margin-left: 0;
+}
+
+a.nav-link{
+display: inline;
+}
+
+li .signup, li .login {
+display: none;
+}
+
+/* .sidenav{
+display:inline-block ;
+overflow: auto;
+height: auto;
+} */
+
+.navFooter{
+  /* margin-top: 0px; */
+  /* height: auto; */
+}
+
+.genDiv{
+  width: 100%;
+}
+
+/* .navFooter{
+  margin-top: 0%;
+} */
+
+}
+
+
+.myform{
+  line-height: 20px;
+}
+
+
+/* ===footer== */
+
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+  background-color: rgb(19, 14, 14);
+  color: blanchedalmond;
+  text-align: center;
+  height: 25vh;
+  /* margin-bottom:-3% !important; */
+}
+
+.space1{
+  line-height: 5px;
+  padding: 0px 0px 0px 5px;
+}
+
+
+.space{
+  line-height: 0px;
+  font-size: small;
+}
+
+.space a{
+  /* line-height: 0px; */
+  font-size: small;
+  color:blanchedalmond!important ;
+}
+
+
+footer p a{
+  margin-left: 0px;
+}
+
+.navFooter{
+  margin-top: 60%;
+  margin-left: 5px;
+}
+
+/* .marg{
+  margin-top: 20px;
+} */
+
+.imgContainer{
+  margin: 0 auto;
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+/* ====Delete Dialog Box styling for non-Bootstrap code==== */
+
+/* Add padding and center-align text to the container */
+.container {
+  padding: 16px;
+  text-align: center;
+}
+
+/* The Modal (background) also affects BOOTSTRAP 4 modal */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.541);
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content2 {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+ 
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .deletebtn {
+     width: 100%;
+  }
+}
+

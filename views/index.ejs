@@ -1,0 +1,22 @@
+<%- include ('partials/header') %>
+<div class="main" id="main">
+  <h3>pdSoft Blog Site</h3>
+  <div class="genDiv">
+    <%adminBlog.forEach(function(blog){%>
+    <div class="row">
+      <div class="col-md-4">
+        <img class="postImg" src="<%=blog.image%>" alt="" height="70%" width="100%">
+      </div>
+      <div class="col-md-8">
+        <h4 class="h4"><a href="/blog/<%=blog._id%>"><%=blog.title%></a></h4>
+        <h6 class="mydate"><%=blog.created.toDateString()%></h6>
+        <h6 style="text-align: justify;"><%=blog.body.substring(0, 100)%>...</h6>
+        <a class="btnn" href="/blog/<%=blog._id%>">Read More <i class="fa fa-arrow-right"></i> </a>
+      </div>
+    </div>
+    <hr>
+    <br>
+    <%})%>
+  </div>
+</div>
+<%- include ('partials/footer') %>

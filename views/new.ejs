@@ -1,0 +1,26 @@
+<%- include ('partials/header') %>
+<div class="main" id="main">
+  <div class="genDiv">
+    <h3 style="margin-left: 0;">New Post</h3>
+
+    <form class="myform" action="/blog" method="POST">
+      <b><label class="ps" for="title"> Title</label></b>
+      <input class="form-control" id="title" type="text" placeholder="" name="blog[title]">
+      <b><label class="ps" for="image">Image</label></b>
+      <input class="form-control" id="image" type="text" placeholder="" name="blog[image]">
+      <b><label class="ps" for="body">Post Content</label></b>
+      <textarea class="ps" id="body" type="text" name="blog[body]" id="" cols="42.5" rows="2" placeholder=""></textarea>
+      <br>
+      <b><label class="ps" for="myCheck">Admin ?</label></b>
+      <input class="checkbox" id="myCheck" type="checkbox" value="checkbox" onclick="myFunction()">
+      <input class="form-control" id="password" type="password" name="poster" id="" placeholder="Admin Password">
+      <br>
+      <input style="text-align: right;" class="btnn" type="submit" value="Create">
+    </form>
+  </div>
+</div>
+<%- include ('partials/footer') %>
+
+<!-- <label for="myCheck">Checkbox:</label> 
+<input type="checkbox" id="myCheck" onclick="myFunction()">
+<p id="text" style="display:none">Checkbox is CHECKED!</p> -->
